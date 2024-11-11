@@ -1,3 +1,12 @@
+---
+title: 깃허브를 통한 블로그 생성
+author: M0S-quito
+date: 2024-11-07 14:10:00 +0800
+categories: [Blogging, Tutorial]
+tags: [writing]
+render_with_liquid: false
+---
+
 ## Step 0. 사전 준비사항
 
 - Windows 64bit
@@ -5,6 +14,7 @@
 - VS Code 설치
 - Github 가입
 
+--- 
 ## Step 1. Github Page 생성
 
 ### Step 1-1. Repository 생성
@@ -43,6 +53,7 @@
 - 커밋 메시지 입력, 커밋 & 푸시
 - 사이트 반영 확인 (예시: `https://karina.github.io`)
 
+---
 ## Step 2. 로컬 개발 환경 구축
 
 ### Step 2-1. Ruby 설치
@@ -83,6 +94,7 @@ bundle exec jekyll serve
 ```
 - http://127.0.0.1:4000/ 또는 http://localhost:4000/ 접속 확인
 
+---
 ## Step 3. Jekyll 테마 적용
 
 ### Step 3-0. 테마 선택
@@ -135,6 +147,7 @@ npm install && npm run build
 # assets/js/dist
 ```
 - `_config.yml` 파일 수정
+
 ```shell
 timezone: Asia/Seoul
 
@@ -145,4 +158,20 @@ github:
 ```
 - 모든 변경사항 커밋 및 푸시
 - 커밋 메시지 주의
+-> **Conventional Commits**방식을 사용 해야 함
+
+```
+git commit -m "<type><subject>"
+```
+
+**type** 종류
+- feat: 새로운 기능 추가
+- fix: 버그 수정
+- docs: 문서 수정 (코드 수정은 없음)
+- style: 코드 스타일 수정 (띄어쓰기, 세미콜론 추가 등 동작에는 영향 없음)
+- refactor: 코드 리팩토링 (기능 변화 없이 코드 구조만 수정)
+- test: 테스트 코드 추가나 수정
+- chore: 빌드 관련 작업이나 패키지 매니저 설정 등, 기타 잡일
+
+
 - 사이트 반영 확인 (예시: `https://karina.github.io`)
