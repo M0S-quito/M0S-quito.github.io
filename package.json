@@ -1,0 +1,13 @@
+{
+  "name": "m0s-quito.github.io",
+  "version": "1.0.0",
+  "description": "<img src=\"assets/theme_logo.svg\" class=\"detail_header\">",
+  "main": "index.js",
+  "scripts": {
+    "build": "jekyll build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
