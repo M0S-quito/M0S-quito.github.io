@@ -7,6 +7,10 @@
     {% if page.layout != 'home' %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - {{ site.title }}{% else %}
     {{ site.title }}{% endif %}
   </title>
+  <!-- goatcounter 설정 -->
+  <script data-goatcounter="https://m0squitoblog.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script type="text/javascript" src="{{ page.js_file | relative_url }}"></script>
 
