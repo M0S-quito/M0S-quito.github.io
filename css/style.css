@@ -26,3 +26,11 @@ input {
   padding: 1em;
   color: #fff;
 }
+#title{
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+#title img{
+  width: 90%;
+}
